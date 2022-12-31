@@ -25,7 +25,7 @@ public class Plant {
     private BigDecimal price;
 
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "delivery_id")
     private Delivery delivery;
 
