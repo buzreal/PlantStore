@@ -8,6 +8,10 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
+
+@NamedQuery(
+        name = "Delivery.findByName",
+        query = "select distinct d from Delivery d join d.plants p where p.name = :name") //"select d from Delivery d where d.name = :name")
 @Entity
 public class Delivery {
     @Id

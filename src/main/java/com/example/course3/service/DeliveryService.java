@@ -2,6 +2,7 @@ package com.example.course3.service;
 
 import com.example.course3.data.delivery.Delivery;
 import com.example.course3.data.delivery.DeliveryRepository;
+import com.example.course3.data.delivery.RecipientAndPrice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,5 +16,10 @@ public class DeliveryService {
         deliveryRepository.persist(delivery);
         return delivery.getId();
     }
+
+    public RecipientAndPrice getBill(Long deliveryId){
+        return deliveryRepository.getBill(deliveryId);
+    }
+
 
 }
