@@ -22,7 +22,15 @@ public class Delivery {
     @Type(type = "yes_no")
     private Boolean isCompleted;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "delivery", cascade = CascadeType.REMOVE)
+    public List<Plant> getPlants() {
+        return plants;
+    }
+
+    public void setPlants(List<Plant> plants) {
+        this.plants = plants;
+    }
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "delivery", cascade = CascadeType.ALL)
     List<Plant> plants;
 
     public Delivery(){}
