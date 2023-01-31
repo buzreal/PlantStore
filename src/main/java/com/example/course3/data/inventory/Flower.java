@@ -1,9 +1,6 @@
 package com.example.course3.data.inventory;
 
-import org.hibernate.annotations.Nationalized;
-
-import javax.persistence.*;
-import java.math.BigDecimal;
+import javax.persistence.Entity;
 
 
 @Entity

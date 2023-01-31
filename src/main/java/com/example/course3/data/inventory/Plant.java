@@ -1,13 +1,12 @@
 package com.example.course3.data.inventory;
 
 import com.example.course3.data.delivery.Delivery;
-import com.example.course3.dto.Views;
+import com.example.course3.controller.Views;
 import com.fasterxml.jackson.annotation.JsonView;
 import org.hibernate.annotations.Nationalized;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.util.List;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
