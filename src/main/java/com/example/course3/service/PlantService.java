@@ -1,7 +1,7 @@
 package com.example.course3.service;
 
-import com.example.course3.data.inventory.Plant;
-import com.example.course3.data.inventory.PlantRepository;
+import com.example.course3.data.Plant;
+import com.example.course3.data.PlantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +19,7 @@ public class PlantService {
 
     public Boolean delivered(Long id){
         // return plantRepository.deliveryCompleted(id);
+        System.out.println(plantRepository.deliveryCompleted(id));
         return plantRepository.existsPlantByIdAndDeliveryCompleted(id, true);
     }
 

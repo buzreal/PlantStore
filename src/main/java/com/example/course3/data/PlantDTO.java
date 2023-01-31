@@ -1,4 +1,4 @@
-package com.example.course3.dto;
+package com.example.course3.data;
 
 import java.math.BigDecimal;
 

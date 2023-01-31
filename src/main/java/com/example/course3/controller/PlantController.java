@@ -1,7 +1,7 @@
 package com.example.course3.controller;
 
-import com.example.course3.data.inventory.Plant;
-import com.example.course3.dto.PlantDTO;
+import com.example.course3.data.Plant;
+import com.example.course3.data.PlantDTO;
 import com.example.course3.service.PlantService;
 import com.fasterxml.jackson.annotation.JsonView;
 import org.springframework.beans.BeanUtils;

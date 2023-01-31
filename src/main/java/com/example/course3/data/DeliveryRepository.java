@@ -1,6 +1,5 @@
-package com.example.course3.data.delivery;
+package com.example.course3.data;
 
-import com.example.course3.data.inventory.Plant;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

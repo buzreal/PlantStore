@@ -1,8 +1,8 @@
 package com.example.course3.service;
 
-import com.example.course3.data.delivery.Delivery;
-import com.example.course3.data.delivery.DeliveryRepository;
-import com.example.course3.data.delivery.RecipientAndPrice;
+import com.example.course3.data.Delivery;
+import com.example.course3.data.DeliveryRepository;
+import com.example.course3.data.RecipientAndPrice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

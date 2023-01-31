@@ -1,6 +1,5 @@
-package com.example.course3.data.inventory;
+package com.example.course3.data;
 
-import com.example.course3.data.delivery.Delivery;
 import com.example.course3.controller.Views;
 import com.fasterxml.jackson.annotation.JsonView;
 import org.hibernate.annotations.Nationalized;

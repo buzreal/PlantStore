@@ -1,4 +1,4 @@
-package com.example.course3.data.inventory;
+package com.example.course3.data;
 
 import javax.persistence.Entity;
 
