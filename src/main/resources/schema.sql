@@ -10,5 +10,6 @@ create table if not exists candy_delivery (
     delivery_id bigint not null,
     foreign key (candy_id) references candy(id),
     foreign key (delivery_id) references delivery(id) on delete cascade
-
 )
+
+
